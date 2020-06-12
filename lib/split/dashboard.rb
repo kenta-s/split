@@ -18,7 +18,6 @@ module Split
     helpers Split::DashboardPaginationHelpers
 
     get '/' do
-      raise 'You should see this error when you access the dashboard'
       # Display experiments without a winner at the top of the dashboard
       @experiments = Split::ExperimentCatalog.all_active_first
 
@@ -30,7 +29,7 @@ module Split
       else
         @current_env = "Rack: #{Rack.version}"
       end
-      # "You should see this message"
+
       erb :index
     end
 
