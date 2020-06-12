@@ -31,7 +31,7 @@ module Split
         @current_env = "Rack: #{Rack.version}"
       end
       # erb :index
-      ""
+      "You should see this message"
     end
 
     post '/force_alternative' do
