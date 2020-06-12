@@ -29,7 +29,6 @@ module Split
       else
         @current_env = "Rack: #{Rack.version}"
       end
-
       erb :index
     end
 
