@@ -30,8 +30,8 @@ module Split
       else
         @current_env = "Rack: #{Rack.version}"
       end
-      # erb :index
-      "You should see this message"
+      # "You should see this message"
+      erb :index
     end
 
     post '/force_alternative' do
