@@ -18,6 +18,7 @@ module Split
     helpers Split::DashboardPaginationHelpers
 
     get '/' do
+      raise 'You should see this error when you access the dashboard'
       # Display experiments without a winner at the top of the dashboard
       @experiments = Split::ExperimentCatalog.all_active_first
 
